@@ -1,5 +1,6 @@
 .flex {
   display: flex;
+  flex-direction: row;
 }
 html,
 body,
@@ -127,4 +128,13 @@ table {
 }
 .nav {
   display: flex;
+  flex-direction: row;
+}
+.nav-item ul {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper {
+  width: 100%;
+  padding: 5px;
 }
