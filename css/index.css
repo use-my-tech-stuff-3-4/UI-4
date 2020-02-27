@@ -126,41 +126,59 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.nav {
-  display: flex;
-  flex-direction: row;
+html {
+  font-family: 'Source Sans Pro';
 }
-.nav-item {
-  display: flex;
-  flex-direction: row;
-}
-.nav-item ul {
-  align-items: flex-end;
-}
-.nav-item ul li a {
-  padding: 15px;
-}
-.wrapper {
+nav {
+  position: absolute;
   width: 100%;
+  margin-top: 15px;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 10px;
+  margin: 15px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
 }
 .top {
+  background: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   width: 100%;
   height: 100vh;
-  background: url("../img/mountain.jpeg") no-repeat;
-  background-size: cover;
   display: flex;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header {
   color: white;
-  position: relative;
-  margin-top: 35vh;
+  width: 75%;
+  margin: auto auto;
   text-align: center;
 }
 .header h1 {
-  font-size: 50px;
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 .header p {
   margin-top: 20px;
+  font-size: 20px;
 }
 .header button {
   font-size: 20px;
@@ -170,10 +188,72 @@ table {
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #f21040;
-  font-weight: bold;
-  margin-top: 20px;
+  margin-top: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 .header button:hover {
   cursor: pointer;
+}
+.header button:first-child {
+  background: #f21040;
+}
+.header button:first-child:hover {
+  background: #BF0D34;
+}
+.header a:last-child button {
+  background: #1CA64C;
+  margin-left: 10px;
+}
+.header a:last-child button:hover {
+  background: #16803B;
+}
+.content {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+}
+.content h1 {
+  font-size: 45px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.content button {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+  width: 165px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 3px solid hotpink;
+  color: hotpink;
+  background: #FFF;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.content button:hover {
+  background: hotpink;
+  color: #FFF;
+  cursor: pointer;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.gallery .item p {
+  text-align: center;
+  padding-top: 5px;
+}
+.gallery .item img {
+  width: 250px;
+  height: 200px;
+  margin-top: 15px;
 }

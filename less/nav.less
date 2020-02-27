@@ -1,14 +1,21 @@
-.nav{
-    .flex;
-
-}
-
-.nav-item {
-    .flex;
-    ul {
-        align-items: flex-end;
-        li a {
-            padding: 15px;
-        }
-    }
+nav {
+	position: absolute;
+	width: 100%;
+	margin-top: 15px;
+	ul {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		li {
+			a {
+				text-decoration: none;
+				color: #FFF;
+				padding: 10px;
+				margin: 15px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
