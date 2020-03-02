@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: row;
 }
+.display {
+  display: flex;
+}
 html,
 body,
 div,
@@ -129,25 +132,54 @@ table {
 html {
   font-family: 'Source Sans Pro';
 }
-nav {
+.top-section {
   position: absolute;
-  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
   margin-top: 15px;
 }
-nav ul {
-  display: flex;
-  width: 100%;
+.top-section .links {
+  flex-direction: row;
   justify-content: center;
 }
-nav ul li a {
+.top-section .links a {
+  padding: 1rem;
   text-decoration: none;
-  color: #FFF;
-  padding: 10px;
-  margin: 15px;
+  color: black;
 }
-nav ul li a:hover {
-  text-decoration: underline;
+.top-section .links a:hover {
+  font-size: 2rem;
 }
-nav {
-  background: blue;
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+.wrapper {
+  background: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper .header2 {
+  color: white;
+  width: 75%;
+  margin: auto auto;
+  text-align: center;
+}
+.wrapper .header2 h1 {
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.wrapper .header2 p {
+  margin-top: 20px;
+  font-size: 20px;
 }

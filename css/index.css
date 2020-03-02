@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: row;
 }
+.display {
+  display: flex;
+}
 html,
 body,
 div,
