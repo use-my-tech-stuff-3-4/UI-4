@@ -9,13 +9,17 @@
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    @media @mediascreen {
+        height: 2rem;
+    }
 
     .header2 {
         color: white;
         width: 75%;
         margin: auto auto;
         text-align: center;
+
 	    h1 {
             font-size: 75px;
             font-weight: bold;
@@ -32,4 +36,9 @@
     flex-direction: row;
     margin: 0 auto;
     margin-top: 75px;
+    flex-wrap: wrap;
+
+    @media @mediascreen {
+        flex-direction: column;
+    }
 }
