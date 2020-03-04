@@ -201,6 +201,7 @@ nav ul li a:hover {
   height: 300px;
   width: 100%;
   background: #423A37;
+  position: relative;
 }
 .footer section {
   margin: 0 auto;
@@ -214,4 +215,11 @@ nav ul li a:hover {
   padding: 5px;
   outline: 0;
   border: 0;
+}
+.footer p {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  left: 48%;
+  bottom: 10px;
 }
