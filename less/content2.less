@@ -10,15 +10,51 @@
 	background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
-    @media @mediascreen {
-        height: 2rem;
+    align-items: center;
+    @media (max-width: 1439px) {
+        height:140vh;
+    }
+    @media (max-width: 1160px) {
+        height: 180vh;
+    }
+    nav {
+        position: absolute;
+        margin: 0 auto;
+        margin-top: 15px;  
+        @media @mediascreen {
+            margin-bottom: 200px;
+        }
+
+        .links {
+            .flex;
+            text-align: center;
+            width: 100%;
+        
+            a{
+                .flex;
+                justify-content: center;
+                padding: 1rem;
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    font-size: 2rem;
+
+                }
+            }
+        }
     }
 
     .header2 {
         color: white;
         width: 75%;
         margin: auto auto;
+        display: inline-block;
         text-align: center;
+        @media (max-width: 1439px) {
+            position: static;
+            margin: 100px;
+        }
+        
 
 	    h1 {
             font-size: 75px;
@@ -34,11 +70,29 @@
 .content2 {
     .display;
     flex-direction: row;
-    margin: 0 auto;
+    align-content: center;
     margin-top: 75px;
     flex-wrap: wrap;
+    margin: 0 auto 200px auto;
+    @media (max-width: 2159px){
+        margin: 0 10% 200px 10%;
+        position: static;
+    }
+    @media (max-width: 1729px) {
+        max-width: 90%;
+        margin: 0 20% 50px 20%;
+        position: static;
+    }
+    @media (max-width: 1439px) {
+        max-width: 35%;
+        position: static
+    }
 
     @media @mediascreen {
         flex-direction: column;
+        margin: -100px auto 0 auto;
+        position: static;
+        
+        
     }
 }

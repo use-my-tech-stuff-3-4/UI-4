@@ -132,16 +132,17 @@ table {
 html {
   font-family: 'Source Sans Pro';
 }
-.top-section {
+nav {
   position: absolute;
   margin: 0 auto;
   margin-top: 15px;
 }
-.top-section .links {
+nav .links {
   display: flex;
-  justify-content: flex-end;
+  text-align: center;
+  width: 100%;
 }
-.top-section .links a {
+nav .links a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -149,7 +150,7 @@ html {
   text-decoration: none;
   color: white;
 }
-.top-section .links a:hover {
+nav .links a:hover {
   font-size: 2rem;
 }
 @font-face {
@@ -169,17 +170,57 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
+}
+@media (max-width: 1439px) {
+  .wrapper {
+    height: 140vh;
+  }
+}
+@media (max-width: 1160px) {
+  .wrapper {
+    height: 180vh;
+  }
+}
+.wrapper nav {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 @media (max-width: 500px) {
-  .wrapper {
-    height: 2rem;
+  .wrapper nav {
+    margin-bottom: 200px;
   }
+}
+.wrapper nav .links {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+.wrapper nav .links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.wrapper nav .links a:hover {
+  font-size: 2rem;
 }
 .wrapper .header2 {
   color: white;
   width: 75%;
   margin: auto auto;
+  display: inline-block;
   text-align: center;
+}
+@media (max-width: 1439px) {
+  .wrapper .header2 {
+    position: static;
+    margin: 100px;
+  }
 }
 .wrapper .header2 h1 {
   font-size: 75px;
@@ -193,12 +234,34 @@ html {
 .content2 {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  align-content: center;
   margin-top: 75px;
   flex-wrap: wrap;
+  margin: 0 auto 200px auto;
+}
+@media (max-width: 2159px) {
+  .content2 {
+    margin: 0 10% 200px 10%;
+    position: static;
+  }
+}
+@media (max-width: 1729px) {
+  .content2 {
+    max-width: 90%;
+    margin: 0 20% 50px 20%;
+    position: static;
+  }
+}
+@media (max-width: 1439px) {
+  .content2 {
+    max-width: 35%;
+    position: static;
+  }
 }
 @media (max-width: 500px) {
   .content2 {
     flex-direction: column;
+    margin: -100px auto 0 auto;
+    position: static;
   }
 }
